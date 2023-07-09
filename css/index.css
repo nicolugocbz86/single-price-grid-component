@@ -20,7 +20,7 @@
     }
     .attribution a {
         text-decoration: none;
-        color: hsl(228, 45%, 44%);
+        color: hsl(179, 62%, 33%)
     }
 
 /* MEDIA QUERIES */
@@ -150,7 +150,37 @@
     @media screen and (min-width: 401px) {
 
         /* TAGS */
+
+            body {
+                width: 1440px;
+                height: 800px;
+            }
+
         /* CLASS */
+
+            .card {
+                margin: auto;
+                width: 58%;
+                display: grid;
+                grid-template-areas:
+                'card-top card-top'
+                'card-middle card-bottom';
+            }
+
         /* ID */
+
+            #card-top {
+                grid-area: card-top;
+            }
+
+            #card-middle {
+                border-radius: 0 0 0 .4rem;
+                grid-area: card-middle;
+            }
+
+            #card-bottom {
+                border-radius: 0 0 .4rem 0;
+                grid-area: card-bottom;
+            }
 
     }
